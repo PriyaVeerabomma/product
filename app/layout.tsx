@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
-    generator: 'v0.app'
+    generator: 'v0.dev'
 }
 
 export default function RootLayout({
@@ -71,3 +71,6 @@ export default function RootLayout({
     </html>
   )
 }
+
+
+import './globals.css'
