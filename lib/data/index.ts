@@ -159,7 +159,7 @@ export const experiences: Experience[] = [
     company: "Northeastern Business Services",
     position: "Business Intelligence Analyst",
     startDate: "January 2025",
-    endDate: "Present",
+    endDate: "August 2025",
     location: "Boston, MA",
     description:
       "Responsible for data analysis and visualization of financial transactions to drive business decisions.",
@@ -171,35 +171,73 @@ export const experiences: Experience[] = [
   },
   {
     company: "Astir IT",
-    position: "Machine Learning Engineer Intern",
+    position: "Software Engineering Intern",
     startDate: "September 2024",
     endDate: "January 2025",
-    location: "Boston, MA",
+    location: "New Jersey, USA",
     description: "Developed AI-powered document intelligence systems for financial data analysis.",
     achievements: [
-      "Engineered an AI-powered document intelligence system using LangChain and Azure OpenAI, enabling automated analysis of financial documents and reducing research time by 15% for consulting teams.",
-      "Implemented a Retrieval-Augmented Generation (RAG) pipeline with Elasticsearch kNN for semantic search and document retrieval, processing 1,000+ financial documents with 90% accuracy in relevant information extraction.",
-      "Developed a secure FastAPI backend with JWT authentication and React frontend, creating an intuitive interface for real-time document querying and summarization that reduced average query response time to under 2 seconds.",
-      "Built automated ETL pipelines using Apache Airflow for document processing, implementing robust error handling and monitoring that achieved 95% pipeline reliability.",
-      "Containerized the application using Docker and deployed on GCP with Kubernetes, establishing horizontal pod autoscaling to handle varying workloads while maintaining 98% service availability.",
+      "Designed a pilot RAG platform (LangChain) that combined semantic search with vector databases, reducing document retrieval latency by 60% in internal testing.",
+      "Built 4 REST APIs and written data ingestion scripts, applying SQL indexing strategies to ensure low-latency queries and streamlining manual extraction processes for operations teams.",
+      "Implemented structured logging, monitoring pipelines, and A/B testing workflows, improving response relevance by 15% and enabling faster issue detection.",
     ],
   },
   {
-    company: "Cognizant Technology Solutions Pvt Ltd",
-    position: "Data Engineer",
-    startDate: "November 2021",
+    company: "Cognizant Technology Solutions Pvt Ltd – Verizon Network Analytics (Client) ",
+    position: "Software Development Engineer",
+    startDate: "October 2021",
     endDate: "July 2023",
     location: "Hyderabad, India",
     description:
       "Responsible for developing and maintaining data pipelines and machine learning models for system optimization.",
     achievements: [
-      "Deployed machine learning models with Python and TensorFlow, achieving 85% accuracy in predicting system failures, and developed real-time monitoring using ElasticSearch, Kibana, and React.js dashboards, improving system diagnostics by 30%.",
-      "Maintained RESTful APIs for secure, efficient data communication, and optimized front-end and back-end interactions.",
+      "Collaborated with senior architects on a microservices-based network analytics platform, onboarding new network devices into the infrastructure which resulted in increment of 2000+ customers in 2 weeks of product release.",
+      "Managed the QA deployment process with cybersecurity approval, ensured 95% code coverage in SonarQube, and leading ElasticSearch-based log analysis to track the bugs and improve latency between API calls by 35%.",
+      "Reduced manual workload by 70% by implementing a server-side script for automated bug tracking during builds.",
+      "Developed a serverless webhook service integrated with RabbitMQ to trigger background processes and enable scalable, asynchronous event handling.",
+      "Optimized and enhanced code performance through parallel execution, achieving 30% improvement in execution speed, deployed the project within the project deadline, focusing on scalability, low latency and monitoring.",
     ],
   },
 ]
 
 export const projects: Project[] = [
+  {
+    id: "fraud-detection",
+    title: "Real-Time Fraud Detection",
+    description: "A comprehensive real time fraud detection project",
+    thumbnail: "/placeholder.svg?height=400&width=600",
+    technologies: ["Java", "Akka Actor Model", "Qdrant", "AgenticAI"],
+    category: ["AI/ML", "Web", "Backend"],
+    codeUrl: "https://github.com/PriyaVeerabomma/akka-rag-cluster",
+    featured: true,
+    details:
+      "This repository contains the Big Data Hackathon project for the DAMG7245 course. The project focuses on implementing big data analytics techniques to solve real-world problems.",
+    objectives: [
+      "Engineered a fault-tolerant, distributed backend using ",
+      "the Akka Actor Model, applying message-driven design",
+      "for scalability and resilience across a 3-node cluster",
+      "with 20+ concurrent actors, and integrated Qdrant vector search to",
+      "enable real-time anomaly detection with sub-second response times.",
+    ],
+  },
+  {
+    id: "multi-agent-ai-platform",
+    title: "Multi-Agent AI Platform - TravelBuddy",
+    description: "A comprehensive Agentic AI project for real-time travel assistance.",
+    thumbnail: "/placeholder.svg?height=400&width=600",
+    technologies: ["AI Agents", "Twilio", "LangGraph", "FastAPI", "React", "AWS S3", "Snowflake", "DBT"],
+    category: ["AI/ML", "Data Science"],
+    codeUrl: "https://github.com/PriyaVeerabomma/Multi-Modal-AI-Research-Assistant-",
+    featured: true,
+    details:
+      "This repository contains the Agentic AI project for the DAMG7245 course. The project focuses on implementing Agentic AI techniques to solve real-world problems.",
+    objectives: [
+      "Built a multi-agent AI platform using LangGraph",
+      "with 4 autonomous agents and 11 APIs, enabling real-time travel",
+      "assistance through orchestration of search, itineary, and ",
+      "recommendation workflows",
+    ],
+  },
   // DAMG7245 Course Projects
   {
     id: "bigdata-hackathon",
@@ -209,7 +247,7 @@ export const projects: Project[] = [
     technologies: ["Python", "Big Data", "Data Analytics", "MIT License"],
     category: ["Academic", "Data Science"],
     codeUrl: "https://github.com/DAMG7245/BigData-Hackathon",
-    featured: true,
+    featured: false,
     details:
       "This repository contains the Big Data Hackathon project for the DAMG7245 course. The project focuses on implementing big data analytics techniques to solve real-world problems.",
     objectives: [
@@ -227,7 +265,7 @@ export const projects: Project[] = [
     technologies: ["Python", "LangChain", "RAG", "Vector Databases", "LLMs"],
     category: ["AI/ML", "Academic"],
     codeUrl: "https://github.com/DAMG7245/Assignment5A",
-    featured: true,
+    featured: false,
     details:
       "Developed a Multi-Agent RAAG (Retrieval Augmented Generation) Application that leverages multiple AI agents to enhance information retrieval and generation capabilities. The system uses vector databases for efficient knowledge retrieval and LLMs for generating contextually relevant responses.",
     objectives: [
@@ -338,7 +376,7 @@ export const projects: Project[] = [
     category: ["AI/ML", "Backend"],
     demoUrl: "https://deepdocai.demo",
     codeUrl: "https://github.com/PriyaVeerabomma/deepdocai",
-    featured: true,
+    featured: false,
     details:
       "Implemented Retrieval-Augmented Generation (RAG), improving query accuracy by 35% and reducing response time by 50%. Enhanced data indexing with ElasticSearch and streamlined deployment using Docker for scalable performance. Improved semantic search with LangChain, Pinecone, and OpenAI, supporting multi-format document retrieval.",
     objectives: [
