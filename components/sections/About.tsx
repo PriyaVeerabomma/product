@@ -26,36 +26,45 @@ export function About() {
 
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  Back in 2012, I channeled my creativity into designing custom boards and pins on Pinterest, which led
-                  me to explore the world of coding and web development. This creative endeavor sparked a passion that
-                  has carried me through various roles, from agile start-ups to large corporations.
+                Back in 2012, I channeled my creativity into designing custom boards and pins on Pinterest, which led me 
+                to explore the world of coding and web development. This creative endeavor sparked a passion that has 
+                carried me through various roles, from agile start-ups to large corporations.
                 </p>
 
                 <p>
-                  These days, my main focus is on building accessible and data-driven applications. I enjoy working at
-                  the intersection of design and engineering — creating solutions that look good and perform
-                  exceptionally well. Currently, I am pursuing a Master of Science in Computer Software Engineering at
-                  Northeastern University, engaging in projects like developing RAG engines and real-time chatbots.
+                These days, my main focus is on building accessible, scalable and reliable applications. I enjoy working 
+                at the intersection of design and engineering — creating solutions that look good and perform 
+                exceptionally well. Currently, I have recently graduated with a Master of Science in Computer Software 
+                Engineering degree at Northeastern University, engaging in projects like developing RAG engines and real-time chatbots.
                 </p>
 
                 <p>
-                  Professionally, As a Data Engineer at Cognizant Technology Solutions, I built scalable data pipelines,
-                  integrated and processed data from various databases, and implemented machine learning algorithms to
-                  enhance system performance.
+                Professionally, As a Software Engineer at Cognizant Technology Solutions, I built scalable micro services
+                based application, integrated and processed multiple IoT devices for web applications at Verizon and 
+                optimized the user to server interaction using multi threaded programming and object oriented designing 
+                principles. I have also excelled at using Sonarqube for code analysis and improving the security.
                 </p>
 
                 <p>
-                  In addition to my technical skills, I serve as the Vice President of Finance for the Graduate Student
-                  Government at Northeastern University, managing a substantial budget and ensuring financial
-                  transparency.
+                During my free time I love to get my hands on different technologies and explore different tools by 
+                getting my hands dirty, using the platforms and getting to know what the user is looking for. I have 
+                recently developed a project that develops user intinerary  like a holiday planner using Agentic AI, 
+                FastAPI.
                 </p>
 
                 <p>
-                  When I'm not at the computer, I'm usually doodling, editing videos, hanging out with my family, or
-                  searching for the best Tiramisu in the city.
+                In addition to my technical skills, I served as the Vice President of Finance for the Graduate Student 
+                Government at Northeastern University, managing a substantial budget and ensuring financial transparency.
                 </p>
 
-                <p>Feel free to connect with me on LinkedIn or explore my projects on GitHub.</p>
+                <p>
+                When I'm not at the computer, I'm usually doodling, editing videos, hanging out with my family, 
+                or searching for the best Tiramisu in the city.
+                </p>
+              
+                <p>
+                  Feel free to connect with me on LinkedIn or explore my projects on GitHub.
+                </p>
               </div>
             </div>
           </div>

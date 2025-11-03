@@ -143,7 +143,7 @@ export const education: Education[] = [
     institution: "Northeastern University",
     degree: "Master of Science in Computer Software Engineering",
     startDate: "September 2023",
-    endDate: "May 2025",
+    endDate: "August 2025",
     location: "Boston, MA",
     description: "Focused on advanced software engineering methodologies and AI/ML applications.",
     courses: [
@@ -157,7 +157,7 @@ export const education: Education[] = [
 export const experiences: Experience[] = [
   {
     company: "Northeastern Business Services",
-    position: "Business Intelligence Analyst",
+    position: "Software Engineering",
     startDate: "January 2025",
     endDate: "August 2025",
     location: "Boston, MA",
