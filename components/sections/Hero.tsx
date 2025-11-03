@@ -124,7 +124,7 @@ export function Hero() {
 
             <Button asChild variant="outline" size="lg" className="rounded-md px-8 relative overflow-hidden group">
               <a
-                href="https://drive.google.com/file/d/1uYT_R_nq17wyTYj9o2Epan6kU1zhXVq8/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1cdnflDsMM1flFk3gDA0CJEK_D4CloGxS/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
               >
