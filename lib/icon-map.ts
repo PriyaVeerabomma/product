@@ -60,5 +60,13 @@ export const defaultIcon = "/placeholder.svg?height=24&width=24"
 
 // Function to get the icon for a skill
 export function getSkillIcon(skillName: string): string {
-  return iconMap[skillName] || defaultIcon
+  if (iconMap[skillName]) return iconMap[skillName]
+
+  const spaceName = skillName.replace(/_/g, " ").trim()
+  if (iconMap[spaceName]) return iconMap[spaceName]
+
+  const underscored = skillName.replace(/\s+/g, "_").trim()
+  if (iconMap[underscored]) return iconMap[underscored]
+
+  return defaultIcon
 }
