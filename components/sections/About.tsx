@@ -25,7 +25,7 @@ export function About() {
               <h3 className="text-2xl font-semibold mb-6">Machine Learning Engineer & Software Developer</h3>
 
               <div className="space-y-4 text-muted-foreground">
-                <p>
+                {/* <p>
                 Back in 2012, I channeled my creativity into designing custom boards and pins on Pinterest, which led me 
                 to explore the world of coding and web development. This creative endeavor sparked a passion that has 
                 carried me through various roles, from agile start-ups to large corporations.
@@ -64,6 +64,18 @@ export function About() {
               
                 <p>
                   Feel free to connect with me on LinkedIn or explore my projects on GitHub.
+                </p> */}
+                <p>
+                I’m the kind of person who still lives on Stack Overflow, when things breaks see how they work, and always wants to try every new tool the day it launches. Curiosity just kinda runs the show for me.
+                </p>
+                <p>
+                Technically I am a full stack developer, and an AI enthusiast. Right now, I’m juggling between applications, projects, data structures and algorithms(for life).
+                </p>
+                <p>
+                My hidden talents would be I’ve kept a Wordle streak going for over a year even got a few on the first try. Honestly, it’s my proudest daily habit compared to leetcode.
+                </p>
+                <p>
+                And the list of my favorite people would be Padmasree Warrior(alive), Tim Cook(dead but still lives in spirit and in my phone), and maybe I’ll add you to the list if you happen to be a recruiter looking for an SDE 😏
                 </p>
               </div>
             </div>

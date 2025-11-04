@@ -17,7 +17,7 @@ export function Projects() {
     "Backend",
     "Database",
     "DevOps",
-    "Data Engineering",
+    // "Data Engineering",
   ]
 
   const [activeCategory, setActiveCategory] = useState("All")

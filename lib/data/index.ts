@@ -93,20 +93,20 @@ export const skills: Skill[] = [
   { name: "Pinecone", proficiency: 80, category: "ML/AI" },
 
   // Data Engineering Category
-  { name: "Python", proficiency: 95, category: "Data Engineering" },
-  { name: "Apache Airflow", proficiency: 85, category: "Data Engineering" },
-  { name: "Snowflake", proficiency: 88, category: "Data Engineering" },
-  { name: "DBT", proficiency: 82, category: "Data Engineering" },
-  { name: "PostgreSQL", proficiency: 90, category: "Data Engineering" },
-  { name: "MongoDB", proficiency: 85, category: "Data Engineering" },
-  { name: "MySQL", proficiency: 88, category: "Data Engineering" },
-  { name: "Redis", proficiency: 85, category: "Data Engineering" },
-  { name: "Vector Databases", proficiency: 80, category: "Data Engineering" },
-  { name: "Pandas", proficiency: 92, category: "Data Engineering" },
-  { name: "NumPy", proficiency: 90, category: "Data Engineering" },
-  { name: "Matplotlib", proficiency: 85, category: "Data Engineering" },
-  { name: "Seaborn", proficiency: 83, category: "Data Engineering" },
-  { name: "Advanced Excel", proficiency: 88, category: "Data Engineering" },
+  // { name: "Python", proficiency: 95, category: "Data Engineering" },
+  // { name: "Apache Airflow", proficiency: 85, category: "Data Engineering" },
+  // { name: "Snowflake", proficiency: 88, category: "Data Engineering" },
+  // { name: "DBT", proficiency: 82, category: "Data Engineering" },
+  // { name: "PostgreSQL", proficiency: 90, category: "Data Engineering" },
+  // { name: "MongoDB", proficiency: 85, category: "Data Engineering" },
+  // { name: "MySQL", proficiency: 88, category: "Data Engineering" },
+  // { name: "Redis", proficiency: 85, category: "Data Engineering" },
+  // { name: "Vector Databases", proficiency: 80, category: "Data Engineering" },
+  // { name: "Pandas", proficiency: 92, category: "Data Engineering" },
+  // { name: "NumPy", proficiency: 90, category: "Data Engineering" },
+  // { name: "Matplotlib", proficiency: 85, category: "Data Engineering" },
+  // { name: "Seaborn", proficiency: 83, category: "Data Engineering" },
+  // { name: "Advanced Excel", proficiency: 88, category: "Data Engineering" },
 
   // Backend Category
   { name: "FastAPI", proficiency: 90, category: "Backend" },
@@ -114,6 +114,15 @@ export const skills: Skill[] = [
   { name: "Express.js", proficiency: 85, category: "Backend" },
   { name: "Spring Boot", proficiency: 75, category: "Backend" },
   { name: "Hibernate", proficiency: 70, category: "Backend" },
+  { name: "dotnet", proficiency: 90, category: "Backend" },
+  { name: "Object Oriented Design", proficiency: 90, category: "Backend" },
+  { name: "Microservices", proficiency: 90, category: "Backend" },
+  { name: "RESTful APIs", proficiency: 90, category: "Backend" },
+  { name: "GraphQL", proficiency: 80, category: "Backend" },
+  { name: "Asynchronous Programming", proficiency: 85, category: "Backend" },
+  { name: "Message Queues", proficiency: 80, category: "Backend" },
+  { name: "Postman", proficiency: 80, category: "Backend" },
+
 
   // Frontend Category
   { name: "React.js", proficiency: 85, category: "Frontend" },
@@ -132,6 +141,7 @@ export const skills: Skill[] = [
   { name: "Kubernetes", proficiency: 85, category: "DevOps" },
   { name: "Terraform", proficiency: 80, category: "DevOps" },
   { name: "CI/CD", proficiency: 85, category: "DevOps" },
+  { name: "Github Actions", proficiency: 90, category: "DevOps" },
 
   // Database Category (keeping some here for backward compatibility)
   { name: "Tableau", proficiency: 80, category: "Database" },
@@ -147,9 +157,11 @@ export const education: Education[] = [
     location: "Boston, MA",
     description: "Focused on advanced software engineering methodologies and AI/ML applications.",
     courses: [
+      "Generative AI & Applications",
       "Data Management & Design",
       "Network Structure & Cloud Computing",
       "Big Data Systems & Intelligence Analytics",
+      "Prompt Engineering",
     ],
   },
 ]
@@ -157,7 +169,7 @@ export const education: Education[] = [
 export const experiences: Experience[] = [
   {
     company: "Northeastern Business Services",
-    position: "Software Engineering",
+    position: "Software Engineer",
     startDate: "January 2025",
     endDate: "August 2025",
     location: "Boston, MA",
@@ -171,7 +183,7 @@ export const experiences: Experience[] = [
   },
   {
     company: "Astir IT",
-    position: "Software Engineering Intern",
+    position: "Software Development Engineer Intern",
     startDate: "September 2024",
     endDate: "January 2025",
     location: "New Jersey, USA",
@@ -281,7 +293,7 @@ export const projects: Project[] = [
     description: "A comprehensive data processing pipeline for the DAMG7245 course.",
     thumbnail: "/placeholder.svg?height=400&width=600",
     technologies: ["Python", "Data Processing", "ETL", "MIT License"],
-    category: ["Academic", "Data Science", "Data Engineering"],
+    category: ["Academic", "Data Science", /*"Data Engineering"*/],
     codeUrl: "https://github.com/DAMG7245/Assignment4B",
     featured: false,
     details:
@@ -293,7 +305,7 @@ export const projects: Project[] = [
     description: "A real-time data streaming application with analytics capabilities.",
     thumbnail: "/placeholder.svg?height=400&width=600",
     technologies: ["Python", "Kafka", "Spark Streaming", "Real-time Analytics"],
-    category: ["Academic", "Data Engineering", "Data Science"],
+    category: ["Academic", /*"Data Engineering", */"Data Science"],
     codeUrl: "https://github.com/DAMG7245/ASSIGNMENT4A",
     featured: false,
     details:
