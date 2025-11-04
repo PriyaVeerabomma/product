@@ -8,7 +8,7 @@ import { defaultIcon } from "@/lib/icon-map"
 // Define category display names
 const categoryDisplayNames: Record<string, string> = {
   "ML/AI": "Machine Learning & AI",
-  "Data Engineering": "Data Engineering & Tools",
+  // "Data Engineering": "Data Engineering & Tools",
   Backend: "Backend Development",
   Frontend: "Frontend Development",
   Cloud: "Cloud Services",
@@ -17,7 +17,7 @@ const categoryDisplayNames: Record<string, string> = {
 }
 
 // Define category order
-const categoryOrder = ["ML/AI", "Data Engineering", "Backend", "Frontend", "Cloud", "DevOps", "Database"]
+const categoryOrder = ["ML/AI", /*"Data Engineering"*/, "Backend", "Frontend", "Cloud", "DevOps", "Database"]
 
 export function Skills() {
   const [activeCategory, setActiveCategory] = useState<string>("All")
