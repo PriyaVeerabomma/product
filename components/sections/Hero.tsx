@@ -9,11 +9,10 @@ import { motion } from "framer-motion"
 
 // Array of different roles for the rotating text
 const roles = [
-  "Machine Learning Engineer",
+  "Backend Developer",
   "Full Stack Developer",
   "AI Enthusiast",
-  "Software Architect",
-  "Data Scientist",
+  "Software Engineer",
   "Problem Solver",
 ]
 

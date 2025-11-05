@@ -22,7 +22,7 @@ export function About() {
             </div>
 
             <div className="reveal">
-              <h3 className="text-2xl font-semibold mb-6">Machine Learning Engineer & Software Developer</h3>
+              <h3 className="text-2xl font-semibold mb-6">Software Developer & AI Enthusiast</h3>
 
               <div className="space-y-4 text-muted-foreground">
                 {/* <p>
