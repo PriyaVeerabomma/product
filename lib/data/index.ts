@@ -239,7 +239,7 @@ export const projects: Project[] = [
     thumbnail: "/placeholder.svg?height=400&width=600",
     technologies: ["AI Agents", "Twilio", "LangGraph", "FastAPI", "React", "AWS S3", "Snowflake", "DBT"],
     category: ["AI/ML", "Data Science"],
-    codeUrl: "https://github.com/PriyaVeerabomma/Multi-Modal-AI-Research-Assistant-",
+    codeUrl: "https://github.com/PriyaVeerabomma/MultiAgent-RAG",
     featured: true,
     details:
       "This repository contains the Agentic AI project for the DAMG7245 course. The project focuses on implementing Agentic AI techniques to solve real-world problems.",
