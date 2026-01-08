@@ -19,32 +19,6 @@ const poppins = Poppins({
   display: "swap",
 })
 
-// export const metadata: Metadata = {
-//   title: "Sai Priya Veerabomma | Software Engineer & ML Specialist",
-//   description: "Machine Learning Engineer & Full Stack Developer specialized in AI-powered applications",
-//   keywords: ["Machine Learning", "Software Engineer", "AI", "Full Stack Developer", "Data Engineer", "Portfolio"],
-//   authors: [{ name: "Sai Priya Veerabomma" }],
-//   creator: "Sai Priya Veerabomma",
-//   openGraph: {
-//     type: "website",
-//     locale: "en_US",
-//     url: "https://saipriya.vercel.app/",
-//     title: "Sai Priya Veerabomma | Software Engineer & ML Specialist",
-//     description: "Machine Learning Engineer & Full Stack Developer specialized in AI-powered applications",
-//     siteName: "Sai Priya Veerabomma Portfolio",
-//   },
-//   twitter: {
-//     card: "summary_large_image",
-//     title: "Sai Priya Veerabomma | Software Engineer & ML Specialist",
-//     description: "Machine Learning Engineer & Full Stack Developer specialized in AI-powered applications",
-//   },
-//   robots: {
-//     index: true,
-//     follow: true,
-//   },
-//     generator: 'v0.dev'
-// }
-
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://saipriya.vercel.app"),
@@ -54,6 +28,10 @@ export const metadata: Metadata = {
   keywords: [
     "Sai Priya Veerabomma",
     "Priya Veerabomma",
+    "Sai Priya",
+    "priyaveerabomma",
+    "priya shetty",
+    "priya shetty northeastern university",
     "Sai Priya software engineer",
     "Software Engineer",
     "Full Stack Developer",
