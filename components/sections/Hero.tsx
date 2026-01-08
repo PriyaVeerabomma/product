@@ -85,7 +85,7 @@ export function Hero() {
                 }}
                 transition={{ duration: 3, repeat: Number.POSITIVE_INFINITY }}
               >
-                Sai Priya
+                Priya
               </motion.span>
             </h1>
           </motion.div>
