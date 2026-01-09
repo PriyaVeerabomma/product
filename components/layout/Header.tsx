@@ -103,7 +103,7 @@ export default function Header() {
                 color: isScrolled ? "#3e2723" : "currentColor",
               }}
             >
-              <span className="hidden sm:inline">SAIPRIYA</span>
+              {/* <span className="hidden sm:inline">SAIPRIYA</span> */}
               <span className="sm:hidden">SP</span>
             </Link>
           </div>

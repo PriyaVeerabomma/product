@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect } from "react"
-// import { Hero } from "@/components/sections/Hero"
+import { Hero } from "@/components/sections/Hero"
 import { About } from "@/components/sections/About"
 import { Skills } from "@/components/sections/Skills"
 import { MacintoshSkillsMonitor } from "@/components/sections/MacintoshSkillsMonitor"
@@ -76,7 +76,7 @@ export default function Home() {
 
   return (
     <>
-      {/* <Hero /> */}
+      <Hero />
       <About />
       {/* <Experience /> */}
       {/* <Projects /> */}
