@@ -21,7 +21,7 @@ const poppins = Poppins({
 
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://saipriya.vercel.app"),
+  metadataBase: new URL("https://www.priyaveerabomma.me"),
   title: "Priya Veerabomma | Software Engineer",
   description:
     " Sai Priya Veerabomma is a Software Engineer with experience building production-grade AI and backend systems. Specialized in Java, Python, RAG, ReRAG, prompt engineering,React, Next.js, FastAPI, LangGraph,Langchain, Gen-AI, AWS, GCP, Cloud native, data structures algorithms, leetcode and scalable cloud-native architectures, with experience delivering low-latency, reliable systems in academic and industry settings.",

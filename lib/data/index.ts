@@ -56,8 +56,8 @@ export interface ContactInfo {
 export const personal = {
   name: "Sai Priya Veerabomma",
   role: "Machine Learning Engineer & Software Developer",
-  description:
-    "Specialized in building AI-powered applications and data-driven solutions with expertise in LangChain, TensorFlow, and cloud architecture.",
+  description: ["I build software for a living, and lately I’ve been spending a lot of time experimenting with GenAI turning ideas into real features and products.",
+  ],
   photo: "/images/profile-photo.jpg",
   location: "Seattle, WA",
   email: "veerabomma.s@northeastern.edu",
