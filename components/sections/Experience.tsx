@@ -11,28 +11,26 @@ export function Experience() {
     <section id="experience" className="py-20 bg-secondary">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
-          <h2 className="section-title mb-16">Experience</h2>
+          {/* <h2 className="section-title mb-16">Experience</h2> */}
 
           {/* Custom tabs implementation instead of using shadcn Tabs */}
           <div className="mb-10">
             <div className="grid w-full grid-cols-2 bg-background/50 rounded-lg p-1">
               <button
                 onClick={() => setActiveTab("experience")}
-                className={`py-3 px-4 rounded-md font-medium transition-all ${
-                  activeTab === "experience"
-                    ? "bg-background text-foreground shadow-sm"
-                    : "text-muted-foreground hover:text-foreground"
-                }`}
+                className={`py-3 px-4 rounded-md font-medium transition-all ${activeTab === "experience"
+                  ? "bg-background text-foreground shadow-sm"
+                  : "text-muted-foreground hover:text-foreground"
+                  }`}
               >
                 Work Experience
               </button>
               <button
                 onClick={() => setActiveTab("education")}
-                className={`py-3 px-4 rounded-md font-medium transition-all ${
-                  activeTab === "education"
-                    ? "bg-background text-foreground shadow-sm"
-                    : "text-muted-foreground hover:text-foreground"
-                }`}
+                className={`py-3 px-4 rounded-md font-medium transition-all ${activeTab === "education"
+                  ? "bg-background text-foreground shadow-sm"
+                  : "text-muted-foreground hover:text-foreground"
+                  }`}
               >
                 Education
               </button>

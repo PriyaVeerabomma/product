@@ -125,7 +125,7 @@ export function MacintoshSkillsMonitor() {
           font-family: 'IBM Plex Mono', monospace;
           color: #00ff64;
           text-shadow: 0 0 10px #00ff64, 0 0 20px rgba(0, 255, 100, 0.3);
-          font-size: 12px;
+          font-size: 14px;
           line-height: 1.9;
           letter-spacing: 0.3px;
           position: relative;
@@ -258,7 +258,7 @@ export function MacintoshSkillsMonitor() {
           padding: 6px 12px;
           border-radius: 4px;
           font-family: 'IBM Plex Mono', monospace;
-          font-size: 11px;
+          font-size: 14px;
           cursor: pointer;
           transition: all 0.2s;
           border: 1px solid rgba(0, 255, 100, 0.3);
@@ -304,7 +304,7 @@ export function MacintoshSkillsMonitor() {
 
           .category-tab {
             padding: 5px 10px;
-            font-size: 10px;
+            font-size: 12px;
           }
         }
 
@@ -323,7 +323,7 @@ export function MacintoshSkillsMonitor() {
           }
 
           .mac-terminal {
-            font-size: 10px;
+            font-size: 12px;
             line-height: 1.6;
             max-height: 300px;
           }
@@ -334,7 +334,7 @@ export function MacintoshSkillsMonitor() {
 
           .category-tab {
             padding: 4px 8px;
-            font-size: 9px;
+            font-size: 12px;
           }
         }
       `}</style>
