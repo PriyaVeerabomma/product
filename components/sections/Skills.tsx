@@ -60,8 +60,8 @@ export function Skills() {
               <button
                 onClick={() => setActiveCategory("All")}
                 className={`px-4 py-2 rounded-md text-sm font-medium transition-all ${activeCategory === "All"
-                    ? "bg-background text-foreground shadow-sm"
-                    : "text-muted-foreground hover:text-foreground"
+                  ? "bg-background text-foreground shadow-sm"
+                  : "text-muted-foreground hover:text-foreground"
                   }`}
               >
                 All
@@ -72,8 +72,8 @@ export function Skills() {
                   key={category}
                   onClick={() => setActiveCategory(category)}
                   className={`px-4 py-2 rounded-md text-sm font-medium transition-all ${activeCategory === category
-                      ? "bg-background text-foreground shadow-sm"
-                      : "text-muted-foreground hover:text-foreground"
+                    ? "bg-background text-foreground shadow-sm"
+                    : "text-muted-foreground hover:text-foreground"
                     }`}
                 >
                   {category}
