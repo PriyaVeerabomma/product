@@ -211,7 +211,10 @@ export const experiences: Experience[] = [
     ],
   },
 ]
-
+// Feature flags for A/B testing and gradual rollouts
+export const FEATURE_FLAGS = {
+  USE_MONITOR_SKILLS: true, // Set to false to revert to old Skills component
+}
 export const projects: Project[] = [
   {
     id: "fraud-detection",
