@@ -3,22 +3,44 @@
 import { useState, useMemo } from "react"
 import { skills, FEATURE_FLAGS } from "@/lib/data"
 import { useTheme } from "next-themes"
+import { Languages } from "lucide-react"
 
 // Define category display names
-const categoryDisplayNames: Record<string, string> = {
-    "ML/AI": "Machine Learning & AI",
-    Backend: "Backend Development",
-    Frontend: "Frontend Development",
-    Cloud: "Cloud Services",
-    DevOps: "DevOps & Infrastructure",
-    Database: "Database Systems",
-}
+// const categoryDisplayNames: Record<string, string> = {
+//     "ML/AI": "Machine Learning & AI",
+//     Backend: "Backend Development",
+//     Frontend: "Frontend Development",
+//     Cloud: "Cloud Services",
+//     DevOps: "DevOps & Infrastructure",
+//     Database: "Database Systems",
+// }
 
+const categoryDisplayNames: Record<string, string> = {
+    "Languages": "Languages",
+    "Backend Frameworks": "Backend Frameworks",
+    "AI/ML Libraries": "AI/ML Libraries",
+    "Databases": "Databases",
+    "DevOps & Infrastructure": "DevOps & Infrastructure",
+    "APIs & Tools": "APIs & Tools",
+    "Frontend": "Frontend",
+    "Techniques & Patterns": "Techniques & Patterns",
+}
 // Define category order
-const categoryOrder = ["ML/AI", "Backend", "Frontend", "Cloud", "DevOps", "Database"]
+const categoryOrder = [
+    "Languages",
+    "Backend Frameworks",
+    "AI/ML Libraries",
+    "Databases",
+    "DevOps & Infrastructure",
+    "APIs & Tools",
+    "Frontend",
+    "Techniques & Patterns",
+]
+// Define category order
+// const categoryOrder = ["ML/AI", "Backend", "Frontend", "Cloud", "DevOps", "Database"]
 
 export function MacintoshSkillsMonitor() {
-    const [activeCategory, setActiveCategory] = useState<string>("All")
+    const [activeCategory, setActiveCategory] = useState<string>("Languages")
     const { theme } = useTheme()
 
     // Get all unique categories from skills data
@@ -42,7 +64,7 @@ export function MacintoshSkillsMonitor() {
     }, [allCategories])
 
     // Get skills to display based on active category
-    const skillsToDisplay = activeCategory === "All" ? allCategories : [activeCategory]
+    const skillsToDisplay = activeCategory === "Languages" ? ["Languages"] : [activeCategory]
 
     return (
         <section id="skills" className="py-20 relative">
@@ -327,12 +349,12 @@ export function MacintoshSkillsMonitor() {
                             <div className="mac-screen">
                                 {/* Category Tabs */}
                                 <div className="category-tabs">
-                                    <button
+                                    {/* <button
                                         onClick={() => setActiveCategory("All")}
                                         className={`category-tab ${activeCategory === "All" ? "active" : ""}`}
                                     >
                                         ALL
-                                    </button>
+                                    </button> */}
                                     {allCategories.map((category) => (
                                         <button
                                             key={category}

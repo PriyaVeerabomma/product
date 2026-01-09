@@ -84,68 +84,169 @@ export const socials: Social[] = [
 ]
 
 export const skills: Skill[] = [
-  // ML/AI Category
-  { name: "LangChain", proficiency: 90, category: "ML/AI" },
-  { name: "TensorFlow", proficiency: 85, category: "ML/AI" },
-  { name: "OpenAI", proficiency: 90, category: "ML/AI" },
-  { name: "NLTK", proficiency: 80, category: "ML/AI" },
-  { name: "ElasticSearch", proficiency: 85, category: "ML/AI" },
-  { name: "Pinecone", proficiency: 80, category: "ML/AI" },
-
-  // Data Engineering Category
-  // { name: "Python", proficiency: 95, category: "Data Engineering" },
-  // { name: "Apache Airflow", proficiency: 85, category: "Data Engineering" },
-  // { name: "Snowflake", proficiency: 88, category: "Data Engineering" },
-  // { name: "DBT", proficiency: 82, category: "Data Engineering" },
-  // { name: "PostgreSQL", proficiency: 90, category: "Data Engineering" },
-  // { name: "MongoDB", proficiency: 85, category: "Data Engineering" },
-  // { name: "MySQL", proficiency: 88, category: "Data Engineering" },
-  // { name: "Redis", proficiency: 85, category: "Data Engineering" },
-  // { name: "Vector Databases", proficiency: 80, category: "Data Engineering" },
-  // { name: "Pandas", proficiency: 92, category: "Data Engineering" },
-  // { name: "NumPy", proficiency: 90, category: "Data Engineering" },
-  // { name: "Matplotlib", proficiency: 85, category: "Data Engineering" },
-  // { name: "Seaborn", proficiency: 83, category: "Data Engineering" },
-  // { name: "Advanced Excel", proficiency: 88, category: "Data Engineering" },
-
-  // Backend Category
-  { name: "FastAPI", proficiency: 90, category: "Backend" },
-  { name: "Node.js", proficiency: 85, category: "Backend" },
-  { name: "Express.js", proficiency: 85, category: "Backend" },
-  { name: "Spring Boot", proficiency: 75, category: "Backend" },
-  { name: "Hibernate", proficiency: 70, category: "Backend" },
-  { name: "dotnet", proficiency: 90, category: "Backend" },
-  { name: "Object Oriented Design", proficiency: 90, category: "Backend" },
-  { name: "Microservices", proficiency: 90, category: "Backend" },
-  { name: "RESTful APIs", proficiency: 90, category: "Backend" },
-  { name: "GraphQL", proficiency: 80, category: "Backend" },
-  { name: "Asynchronous Programming", proficiency: 85, category: "Backend" },
-  { name: "Message Queues", proficiency: 80, category: "Backend" },
-  { name: "Postman", proficiency: 80, category: "Backend" },
 
 
-  // Frontend Category
-  { name: "React.js", proficiency: 85, category: "Frontend" },
+  // Languages
+  { name: "Python", proficiency: 95, category: "Languages" },
+  { name: "Java", proficiency: 80, category: "Languages" },
+  { name: "C#", proficiency: 95, category: "Languages" },
+  { name: "Bash", proficiency: 85, category: "Languages" },
+
+
+  // Backend Frameworks
+  { name: "FastAPI", proficiency: 90, category: "Backend Frameworks" },
+  { name: "Spring Boot", proficiency: 75, category: "Backend Frameworks" },
+  { name: "Flask", proficiency: 80, category: "Backend Frameworks" },
+
+  // AI/ML Libraries
+  { name: "LangChain", proficiency: 90, category: "AI/ML Libraries" },
+  { name: "LangGraph", proficiency: 90, category: "AI/ML Libraries" },
+  { name: "LlamaIndex", proficiency: 80, category: "AI/ML Libraries" },
+  { name: "TensorFlow", proficiency: 80, category: "AI/ML Libraries" },
+  { name: "PyTorch", proficiency: 80, category: "AI/ML Libraries" },
+
+  // Databases
+  { name: "PostgreSQL", proficiency: 90, category: "Databases" },
+  { name: "MongoDB", proficiency: 80, category: "Databases" },
+  { name: "Redis", proficiency: 85, category: "Databases" },
+  { name: "DynamoDB", proficiency: 80, category: "Databases" },
+  { name: "Pinecone", proficiency: 85, category: "Databases" },
+  { name: "Qdrant", proficiency: 80, category: "Databases" },
+  // DevOps & Infrastructure
+  { name: "AWS", proficiency: 85, category: "DevOps & Infrastructure" },
+  { name: "GCP", proficiency: 75, category: "DevOps & Infrastructure" },
+  { name: "Azure", proficiency: 70, category: "DevOps & Infrastructure" },
+  { name: "Docker", proficiency: 90, category: "DevOps & Infrastructure" },
+  { name: "Kubernetes", proficiency: 75, category: "DevOps & Infrastructure" },
+  { name: "Terraform", proficiency: 80, category: "DevOps & Infrastructure" },
+  { name: "Linux", proficiency: 85, category: "DevOps & Infrastructure" },
+  { name: "Git", proficiency: 90, category: "DevOps & Infrastructure" },
+
+  // APIs & Tools
+  { name: "REST APIs", proficiency: 90, category: "APIs & Tools" },
+  { name: "GraphQL", proficiency: 75, category: "APIs & Tools" },
+  { name: "GitHub Actions", proficiency: 90, category: "APIs & Tools" },
+  { name: "Apache Airflow", proficiency: 75, category: "APIs & Tools" },
+  { name: "DBT", proficiency: 75, category: "APIs & Tools" },
+
+  // Frontend
+  { name: "React.js", proficiency: 80, category: "Frontend" },
+  { name: "HTML/CSS", proficiency: 85, category: "Frontend" },
   { name: "TypeScript", proficiency: 90, category: "Frontend" },
   { name: "JavaScript", proficiency: 90, category: "Frontend" },
-  { name: "HTML", proficiency: 95, category: "Frontend" },
-  { name: "CSS", proficiency: 85, category: "Frontend" },
 
-  // Cloud Category
-  { name: "AWS", proficiency: 85, category: "Cloud" },
-  { name: "Azure", proficiency: 80, category: "Cloud" },
-  { name: "GCP", proficiency: 75, category: "Cloud" },
+  // Techniques & Patterns
+  { name: "System Design", proficiency: 85, category: "Techniques & Patterns" },
+  { name: "Microservices Architecture", proficiency: 85, category: "Techniques & Patterns" },
+  { name: "Distributed Systems", proficiency: 80, category: "Techniques & Patterns" },
+  { name: "Performance Optimization", proficiency: 85, category: "Techniques & Patterns" },
+  { name: "Caching Strategies", proficiency: 85, category: "Techniques & Patterns" },
+  { name: "Concurrency & Async Programming", proficiency: 85, category: "Techniques & Patterns" },
+  { name: "Prompt Engineering", proficiency: 85, category: "Techniques & Patterns" },
+  { name: "Vector Search & Semantic Indexing", proficiency: 85, category: "Techniques & Patterns" },
+  { name: "RAG Systems", proficiency: 90, category: "Techniques & Patterns" },
 
-  // DevOps Category
-  { name: "Docker", proficiency: 90, category: "DevOps" },
-  { name: "Kubernetes", proficiency: 85, category: "DevOps" },
-  { name: "Terraform", proficiency: 80, category: "DevOps" },
-  { name: "CI/CD", proficiency: 85, category: "DevOps" },
-  { name: "Github Actions", proficiency: 90, category: "DevOps" },
 
-  // Database Category (keeping some here for backward compatibility)
-  { name: "Tableau", proficiency: 80, category: "Database" },
-  { name: "DynamoDB", proficiency: 80, category: "Database" },
+
+  // // Backend & Systems
+  // { name: "FastAPI", proficiency: 90, category: "Backend" },
+  // { name: "Node.js", proficiency: 85, category: "Backend" },
+  // { name: "Spring Boot", proficiency: 75, category: "Backend" },
+  // { name: "RESTful APIs", proficiency: 90, category: "Backend" },
+  // { name: "GraphQL", proficiency: 80, category: "Backend" },
+  // { name: "Microservices", proficiency: 90, category: "Backend" },
+  // { name: "Distributed Systems", proficiency: 85, category: "Backend" },
+  // { name: "System Design", proficiency: 85, category: "Backend" },
+  // { name: "Concurrency & Async Programming", proficiency: 85, category: "Backend" },
+  // { name: "Caching Strategies", proficiency: 80, category: "Backend" },
+
+  // // GenAI / AI Engineering
+  // { name: "LangChain", proficiency: 90, category: "GenAI" },
+  // { name: "LangGraph", proficiency: 85, category: "GenAI" },
+  // { name: "LLM Orchestration", proficiency: 90, category: "GenAI" },
+  // { name: "Retrieval-Augmented Generation (RAG)", proficiency: 90, category: "GenAI" },
+  // { name: "Prompt Engineering", proficiency: 85, category: "GenAI" },
+  // { name: "TensorFlow", proficiency: 85, category: "GenAI" },
+  // { name: "OpenAI APIs", proficiency: 90, category: "GenAI" },
+  // { name: "Vector Search", proficiency: 85, category: "GenAI" },
+  // { name: "Evaluation & Monitoring", proficiency: 80, category: "GenAI" },
+
+  // // Frontend
+  // { name: "React.js", proficiency: 85, category: "Frontend" },
+  // { name: "TypeScript", proficiency: 90, category: "Frontend" },
+  // { name: "JavaScript", proficiency: 90, category: "Frontend" },
+  // { name: "HTML", proficiency: 95, category: "Frontend" },
+  // { name: "CSS", proficiency: 85, category: "Frontend" },
+
+  // // Cloud & Infrastructure
+  // { name: "AWS", proficiency: 85, category: "Cloud" },
+  // { name: "Azure", proficiency: 80, category: "Cloud" },
+  // { name: "GCP", proficiency: 75, category: "Cloud" },
+
+  // // DevOps & Reliability
+  // { name: "Docker", proficiency: 90, category: "DevOps" },
+  // { name: "Kubernetes", proficiency: 85, category: "DevOps" },
+  // { name: "Terraform", proficiency: 80, category: "DevOps" },
+  // { name: "CI/CD", proficiency: 85, category: "DevOps" },
+  // { name: "GitHub Actions", proficiency: 90, category: "DevOps" },
+
+  // // Data Stores
+  // { name: "PostgreSQL", proficiency: 90, category: "Data Stores" },
+  // { name: "MongoDB", proficiency: 85, category: "Data Stores" },
+  // { name: "Redis", proficiency: 85, category: "Data Stores" },
+  // { name: "DynamoDB", proficiency: 80, category: "Data Stores" },
+  // { name: "Pinecone", proficiency: 80, category: "Data Stores" },
+
+
+
+  // // Backend Category
+  // { name: "FastAPI", proficiency: 90, category: "Backend" },
+  // { name: "Node.js", proficiency: 85, category: "Backend" },
+  // { name: "Spring Boot", proficiency: 75, category: "Backend" },
+  // { name: "RESTful APIs", proficiency: 90, category: "Backend" },
+  // { name: "GraphQL", proficiency: 80, category: "Backend" },
+  // { name: "Microservices", proficiency: 90, category: "Backend" },
+  // { name: "Distributed Systems", proficiency: 85, category: "Backend" },
+  // { name: "System Design", proficiency: 85, category: "Backend" },
+  // { name: "Concurrency & Async Programming", proficiency: 85, category: "Backend" },
+  // { name: "Caching Strategies", proficiency: 80, category: "Backend" },
+
+
+  // { name: "Object Oriented Design", proficiency: 90, category: "Backend" },
+  // { name: "Microservices", proficiency: 90, category: "Backend" },
+  // { name: "RESTful APIs", proficiency: 90, category: "Backend" },
+  // { name: "GraphQL", proficiency: 80, category: "Backend" },
+  // { name: "Asynchronous Programming", proficiency: 85, category: "Backend" },
+  // { name: "Message Queues", proficiency: 80, category: "Backend" },
+  // { name: "Postman", proficiency: 80, category: "Backend" },
+
+
+  // // ML/AI Category
+  // { name: "LangChain", proficiency: 90, category: "ML/AI" },
+  // { name: "TensorFlow", proficiency: 85, category: "ML/AI" },
+  // { name: "OpenAI", proficiency: 90, category: "ML/AI" },
+  // { name: "NLTK", proficiency: 80, category: "ML/AI" },
+  // { name: "ElasticSearch", proficiency: 85, category: "ML/AI" },
+  // { name: "Pinecone", proficiency: 80, category: "ML/AI" },
+
+  // // Data Engineering Category
+  // // { name: "Python", proficiency: 95, category: "Data Engineering" },
+  // // { name: "Apache Airflow", proficiency: 85, category: "Data Engineering" },
+  // // { name: "Snowflake", proficiency: 88, category: "Data Engineering" },
+  // // { name: "DBT", proficiency: 82, category: "Data Engineering" },
+  // // { name: "PostgreSQL", proficiency: 90, category: "Data Engineering" },
+  // // { name: "MongoDB", proficiency: 85, category: "Data Engineering" },
+  // // { name: "MySQL", proficiency: 88, category: "Data Engineering" },
+  // // { name: "Redis", proficiency: 85, category: "Data Engineering" },
+  // // { name: "Vector Databases", proficiency: 80, category: "Data Engineering" },
+  // // { name: "Pandas", proficiency: 92, category: "Data Engineering" },
+  // // { name: "NumPy", proficiency: 90, category: "Data Engineering" },
+  // // { name: "Matplotlib", proficiency: 85, category: "Data Engineering" },
+  // // { name: "Seaborn", proficiency: 83, category: "Data Engineering" },
+  // // { name: "Advanced Excel", proficiency: 88, category: "Data Engineering" },
+
+
+
 ]
 
 export const education: Education[] = [
