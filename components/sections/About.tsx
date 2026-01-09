@@ -27,7 +27,7 @@ export function About() {
     <section id="about" className="py-12 sm:py-16 px-3 sm:px-4 transition-colors duration-300">
       <style>{`
         /* ═══════════════════════════════════════════════════════════════ */
-        /* RESPONSIVE DESIGN - ADAPTED FROM MACINTOSH SKILLS MONITOR */
+        /* RESPONSIVE DESIGN  */
         /* ═══════════════════════════════════════════════════════════════ */
         
         .about-monitor-body {
@@ -349,12 +349,12 @@ export function About() {
                       {/* LEFT: Name */}
                       <div className="about-header-left flex items-center gap-2 sm:gap-3">
                         <h2 className="font-['Press_Start_2P'] tracking-widest" style={{color: '#3a3a3a'}}>
-                          PRIYA
+                          Priya's MAC
                         </h2>
                         <span className="font-mono" style={{color: '#5a4a3a'}}>▌</span>
-                        <h2 className="font-['Courier_New'] font-bold" style={{color: '#5a4a3a'}}>
+                        {/* <h2 className="font-['Courier_New'] font-bold" style={{color: '#5a4a3a'}}>
                           veerabomma
-                        </h2>
+                        </h2> */}
                         
                         {/* Decorative terminal line */}
                         <div className="decorative-line flex gap-0.5 ml-2 hidden sm:flex">
