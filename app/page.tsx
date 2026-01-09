@@ -8,7 +8,10 @@ import { MacintoshSkillsMonitor } from "@/components/sections/MacintoshSkillsMon
 import { FEATURE_FLAGS } from "@/lib/data"
 import { Experience } from "@/components/sections/Experience"
 import { Projects } from "@/components/sections/Projects"
-import { Contact } from "@/components/sections/Contact"
+// import { Contact } from "@/components/sections/Contact"
+
+import { ContactMacintosh } from "@/components/sections/ContactMacintosh"
+
 
 export default function Home() {
   useEffect(() => {
@@ -83,8 +86,9 @@ export default function Home() {
       ) : (
         <Skills />
       )}
+      <ContactMacintosh />
+      {/* <Contact /> */}
 
-      <Contact />
     </>
   )
 }
