@@ -16,59 +16,59 @@ import { Languages } from "lucide-react"
 // }
 
 const categoryDisplayNames: Record<string, string> = {
-    "Languages": "Languages",
-    "Backend Frameworks": "Backend Frameworks",
-    "AI/ML Libraries": "AI/ML Libraries",
-    "Databases": "Databases",
-    "DevOps & Infrastructure": "DevOps & Infrastructure",
-    "APIs & Tools": "APIs & Tools",
-    "Frontend": "Frontend",
-    "Techniques & Patterns": "Techniques & Patterns",
+  "Languages": "Languages",
+  "Backend Frameworks": "Backend Frameworks",
+  "AI/ML Libraries": "AI/ML Libraries",
+  "Databases": "Databases",
+  "DevOps & Infrastructure": "DevOps & Infrastructure",
+  "APIs & Tools": "APIs & Tools",
+  "Frontend": "Frontend",
+  "Techniques & Patterns": "Techniques & Patterns",
 }
 // Define category order
 const categoryOrder = [
-    "Languages",
-    "Backend Frameworks",
-    "AI/ML Libraries",
-    "Databases",
-    "DevOps & Infrastructure",
-    "APIs & Tools",
-    "Frontend",
-    "Techniques & Patterns",
+  "Languages",
+  "Backend Frameworks",
+  "AI/ML Libraries",
+  "Databases",
+  "DevOps & Infrastructure",
+  "APIs & Tools",
+  "Frontend",
+  "Techniques & Patterns",
 ]
 // Define category order
 // const categoryOrder = ["ML/AI", "Backend", "Frontend", "Cloud", "DevOps", "Database"]
 
 export function MacintoshSkillsMonitor() {
-    const [activeCategory, setActiveCategory] = useState<string>("Languages")
-    const { theme } = useTheme()
+  const [activeCategory, setActiveCategory] = useState<string>("Languages")
+  const { theme } = useTheme()
 
-    // Get all unique categories from skills data
-    const allCategories = useMemo(() => {
-        return Array.from(new Set(skills.map((skill) => skill.category))).sort((a, b) => {
-            const indexA = categoryOrder.indexOf(a)
-            const indexB = categoryOrder.indexOf(b)
-            return indexA - indexB
-        })
-    }, [])
+  // Get all unique categories from skills data
+  const allCategories = useMemo(() => {
+    return Array.from(new Set(skills.map((skill) => skill.category))).sort((a, b) => {
+      const indexA = categoryOrder.indexOf(a)
+      const indexB = categoryOrder.indexOf(b)
+      return indexA - indexB
+    })
+  }, [])
 
-    // Get filtered skills and grouped by category
-    const { groupedSkills } = useMemo(() => {
-        // Group skills by category
-        const grouped: Record<string, typeof skills> = {}
-        allCategories.forEach((category) => {
-            grouped[category] = skills.filter((skill) => skill.category === category)
-        })
+  // Get filtered skills and grouped by category
+  const { groupedSkills } = useMemo(() => {
+    // Group skills by category
+    const grouped: Record<string, typeof skills> = {}
+    allCategories.forEach((category) => {
+      grouped[category] = skills.filter((skill) => skill.category === category)
+    })
 
-        return { groupedSkills: grouped }
-    }, [allCategories])
+    return { groupedSkills: grouped }
+  }, [allCategories])
 
-    // Get skills to display based on active category
-    const skillsToDisplay = activeCategory === "Languages" ? ["Languages"] : [activeCategory]
+  // Get skills to display based on active category
+  const skillsToDisplay = activeCategory === "Languages" ? ["Languages"] : [activeCategory]
 
-    return (
-        <section id="skills" className="py-20 relative">
-            <style>{`
+  return (
+    <section id="skills" className="py-20 relative">
+      <style>{`
         @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
         
         .mac-monitor-body {
@@ -339,73 +339,73 @@ export function MacintoshSkillsMonitor() {
         }
       `}</style>
 
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="max-w-3xl mx-auto">
-                    <h2 className="section-title mb-12 text-center">Skills</h2>
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-3xl mx-auto">
+          {/* <h2 className="section-title mb-12 text-center">Skills</h2> */}
 
-                    {/* Macintosh Monitor */}
-                    <div className={`mac-monitor-body ${theme === "dark" ? "dark" : ""}`}>
-                        <div className={`mac-screen-bezel ${theme === "dark" ? "dark" : ""}`}>
-                            <div className="mac-screen">
-                                {/* Category Tabs */}
-                                <div className="category-tabs">
-                                    {/* <button
+          {/* Macintosh Monitor */}
+          <div className={`mac-monitor-body ${theme === "dark" ? "dark" : ""}`}>
+            <div className={`mac-screen-bezel ${theme === "dark" ? "dark" : ""}`}>
+              <div className="mac-screen">
+                {/* Category Tabs */}
+                <div className="category-tabs">
+                  {/* <button
                                         onClick={() => setActiveCategory("All")}
                                         className={`category-tab ${activeCategory === "All" ? "active" : ""}`}
                                     >
                                         ALL
                                     </button> */}
-                                    {allCategories.map((category) => (
-                                        <button
-                                            key={category}
-                                            onClick={() => setActiveCategory(category)}
-                                            className={`category-tab ${activeCategory === category ? "active" : ""}`}
-                                        >
-                                            {category}
-                                        </button>
-                                    ))}
-                                </div>
-
-                                {/* Terminal Output */}
-                                <div className="mac-terminal">
-                                    <div className="terminal-prompt">
-                                        $ load_engineer<span className="cursor">█</span>
-                                    </div>
-
-                                    {skillsToDisplay.map((category) => {
-                                        const categorySkills = groupedSkills[category] || []
-                                        if (categorySkills.length === 0) return null
-
-                                        return (
-                                            <div key={category}>
-                                                <div className="terminal-category">$ {category}</div>
-                                                {categorySkills.map((skill) => (
-                                                    <div key={skill.name} className="terminal-skill">
-                                                        → {skill.name}
-                                                    </div>
-                                                ))}
-                                            </div>
-                                        )
-                                    })}
-
-                                    <div style={{ marginTop: "14px" }} className="terminal-prompt">
-                                        $ ./deploy<span className="cursor">█</span>
-                                    </div>
-                                </div>
-
-                                {/* Scanlines Effect */}
-                                <div className="scanlines"></div>
-                            </div>
-                        </div>
-
-                        {/* Mac Bottom Bezel */}
-                        <div className={`mac-bottom ${theme === "dark" ? "dark" : ""}`}>
-                            <div className={`mac-logo ${theme === "dark" ? "dark" : ""}`}></div>
-                            <div className={`mac-label ${theme === "dark" ? "dark" : ""}`}>ENGINEER</div>
-                        </div>
-                    </div>
+                  {allCategories.map((category) => (
+                    <button
+                      key={category}
+                      onClick={() => setActiveCategory(category)}
+                      className={`category-tab ${activeCategory === category ? "active" : ""}`}
+                    >
+                      {category}
+                    </button>
+                  ))}
                 </div>
+
+                {/* Terminal Output */}
+                <div className="mac-terminal">
+                  <div className="terminal-prompt">
+                    $ load_engineer<span className="cursor">█</span>
+                  </div>
+
+                  {skillsToDisplay.map((category) => {
+                    const categorySkills = groupedSkills[category] || []
+                    if (categorySkills.length === 0) return null
+
+                    return (
+                      <div key={category}>
+                        <div className="terminal-category">$ {category}</div>
+                        {categorySkills.map((skill) => (
+                          <div key={skill.name} className="terminal-skill">
+                            → {skill.name}
+                          </div>
+                        ))}
+                      </div>
+                    )
+                  })}
+
+                  <div style={{ marginTop: "14px" }} className="terminal-prompt">
+                    $ ./deploy<span className="cursor">█</span>
+                  </div>
+                </div>
+
+                {/* Scanlines Effect */}
+                <div className="scanlines"></div>
+              </div>
             </div>
-        </section>
-    )
+
+            {/* Mac Bottom Bezel */}
+            <div className={`mac-bottom ${theme === "dark" ? "dark" : ""}`}>
+              <div className={`mac-logo ${theme === "dark" ? "dark" : ""}`}></div>
+              <div className={`mac-label ${theme === "dark" ? "dark" : ""}`}>ENGINEER</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
 }

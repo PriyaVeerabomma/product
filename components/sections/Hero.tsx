@@ -36,7 +36,7 @@ export function Hero() {
   return (
     <section id="home" className="min-h-screen flex items-center pt-16 relative overflow-hidden" ref={heroRef}>
       {/* Animated background elements */}
-      <div className="absolute inset-0 z-0">
+      {/* <div className="absolute inset-0 z-0">
         {[...Array(15)].map((_, i) => (
           <motion.div
             key={i}
@@ -63,7 +63,7 @@ export function Hero() {
             }}
           />
         ))}
-      </div>
+      </div> */}
 
       {/* Flowing gradient background */}
       <div className="absolute inset-0 z-0 bg-gradient-radial from-transparent via-primary/5 to-transparent animate-pulse-slow opacity-50" />
