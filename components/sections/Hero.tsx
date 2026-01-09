@@ -11,7 +11,7 @@ import { motion } from "framer-motion"
 const roles = [
   "Backend Developer",
   "Full Stack Developer",
-  "AI Enthusiast",
+  "GenAI",
   "Software Engineer",
   "Problem Solver",
 ]
