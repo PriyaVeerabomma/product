@@ -62,7 +62,7 @@ export function Projects() {
     <section id="projects" className="py-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
-          <h2 className="section-title mb-16">Projects</h2>
+          {/* <h2 className="section-title mb-16">Projects</h2> */}
 
           {/* Category filter tabs */}
           <div className="mb-10">
@@ -71,11 +71,10 @@ export function Projects() {
                 <button
                   key={category}
                   onClick={() => handleCategoryChange(category)}
-                  className={`px-4 py-2 rounded-md text-sm font-medium transition-all ${
-                    activeCategory === category
-                      ? "bg-background text-foreground shadow-sm"
-                      : "text-muted-foreground hover:text-foreground"
-                  }`}
+                  className={`px-4 py-2 rounded-md text-sm font-medium transition-all ${activeCategory === category
+                    ? "bg-background text-foreground shadow-sm"
+                    : "text-muted-foreground hover:text-foreground"
+                    }`}
                 >
                   {category}
                 </button>
